@@ -5,5 +5,12 @@ html {
 }
 
 body {
+  /* background-image: url("../images/straightened-blue-shoes-weights-1920.png"); */
   background-color: rgb(17, 24, 39);
+}
+
+.bg-image-hero {
+  background-image: url("../images/straightened-blue-shoes-weights-1920.png");
+  background-color: rgb(17, 24, 39);
+  z-index: 11000000;
 }
