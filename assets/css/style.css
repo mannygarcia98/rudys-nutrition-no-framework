@@ -1,0 +1,9 @@
+html {
+  @media (min-height: 32em) {
+    scroll-padding-top: 3.8em;
+  }
+}
+
+body {
+  background-color: rgb(17, 24, 39);
+}

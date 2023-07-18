@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rudy's Nutrition</title>
     <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="bg-blue-400">
+  <body>
+    <!-- Nav -->
+    <nav class="bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-600">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
+        <div>
+          <a href="/" class="flex items-center">
+            <img src="./assets/images/blue-green-gradient-lighter-logo-icon.svg" class="h-8 mr-3" alt="Rudy's Nutrition Logo" />
+            <span class="self-center text-xl md:text-2xl font-medium whitespace-nowrap text-white">Rudy's Nutrition</span>
+          </a>
+        </div>
+
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            onclick="window.location.href='#pricing';"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2.5 py-px md:px-4 md:py-2 text-center mr-2 md:mr-0 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+          >
+            Get started
+          </button>
+          <button data-collapse-toggle="navbar-sticky" type="button" id="menu-button" class="inline-flex items-center p-2 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto ml-auto px-4" id="menu">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+            <li>
+              <a href="#services" class="block py-2 pl-3 pr-4 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700" aria-current="page">Services</a>
+            </li>
+
+            <li>
+              <a href="#pricing" class="block py-2 pl-3 pr-4 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 rounded md:p-0 md:hover:text-blue-500 text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent border-gray-700">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav -->
+    <!-- Signup Form -->
     <div id="mc_embed_shell">
       <div id="mc_embed_signup">
         <form action="https://gmail.us21.list-manage.com/subscribe/post?u=a6d05b091b6a195e995e37794&amp;id=7a447d405e&amp;f_id=00ce5ee1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
@@ -70,5 +115,9 @@
         </form>
       </div>
     </div>
+    <!-- Signup Form -->
+
+    <!-- Javascript -->
+    <script src="./assets/js/navbar.js"></script>
   </body>
 </html>
